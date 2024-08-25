@@ -1,12 +1,14 @@
 <template>
-    <div class=" divide-gray-200 dark:divide-gray-800 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900 min-h-dvh">
-      <header>
-        <slot name="header">
-          Default header content
-        </slot>
-      </header>
-      <main>
-        <slot />
-      </main>
+    <div class="min-h-dvh bg-gray-200 dark:bg-midnight-950">
+        <header>
+            <slot name="header">
+                <FanergyHeader class="pt-4"></FanergyHeader>
+            </slot>
+        </header>
+        <main>
+            <UContainer>
+                <slot />
+            </UContainer>
+        </main>
     </div>
-  </template>
+</template>
