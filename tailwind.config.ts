@@ -17,7 +17,14 @@ export default <Partial<Config>>{
                     800: '#111827',
                     900: '#0b1120',
                     950: '#030712'
-                }
+                },
+                gradient: '#1AB8E0',
+                text: {
+                    validation: '#FFB82E',
+                    error: '#F93232',
+                    success: '#439F6E',
+                },
+                yellow: '#FFDFA0',
             },
             aspectRatio: {
                 auto: 'auto',
@@ -40,3 +47,33 @@ export default <Partial<Config>>{
 // 900: '#0b1120',
 // 950: '#030712'
 // #030712
+
+// extend: {
+//     colors: {
+//       gradient: {
+//         DEFAULT: '#33DBD9',
+//         light: '#1AC8E0',
+//         lighter: '#1AB1E0',
+//       },
+//       stroke: '#1AB8E0',
+//       bg: '#FFFFFF',
+//       gray: {
+//         950: '#030712',
+//         900: '#111827',
+//         800: '#1F2937',
+//         700: '#374151',
+//         600: '#4B5563',
+//         500: '#6B7280',
+//         400: '#9CA3AF',
+//         300: '#D1D5DB',
+//         200: '#E5E7EB',
+//         100: '#F3F4F6',
+//         DEFAULT: '#F9FAFB',
+//       },
+//       text: {
+//         validation: '#FFB82E',
+//         error: '#F93232',
+//         success: '#439F6E',
+//       },
+//     },
+//   },

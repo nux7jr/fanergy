@@ -1,20 +1,13 @@
 <template>
-    <button
-        :class="[
-            'transition-colors duration-200 ease-in-out flex items-center justify-center',
-            sizeClasses,
-            variantClasses,
-            isDisabled ? 'cursor-not-allowed opacity-50' : 'hover:bg-opacity-90 focus:ring-2 focus:ring-offset-2',
-        ]"
-        :disabled="isDisabled"
-    >
-        <span v-if="icon && iconPosition === 'left'" class="mr-2">
-            <i :class="icon"></i>
-        </span>
+
+    <button :class="[
+        'transition-colors duration-200 ease-in-out flex items-center justify-center',
+        sizeClasses,
+        variantClasses,
+        isDisabled ? 'cursor-not-allowed opacity-50' : 'hover:bg-opacity-90 focus:ring-2 focus:ring-offset-2',
+    ]" :disabled="isDisabled">
+        <Icon mode="svg" name="fanergy:bold-stars" />
         <slot />
-        <span v-if="icon && iconPosition === 'right'" class="ml-2">
-            <i :class="icon"></i>
-        </span>
     </button>
 </template>
 
