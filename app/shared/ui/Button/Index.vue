@@ -6,7 +6,8 @@
         variantClasses,
         isDisabled ? 'cursor-not-allowed opacity-50' : 'hover:bg-opacity-90 focus:ring-2 focus:ring-offset-2',
     ]" :disabled="isDisabled">
-        <Icon mode="svg" name="fanergy:bold-stars" />
+        
+        <!-- <Icon mode="svg" name="fanergy:bold-stars" /> -->
         <slot />
     </button>
 </template>
@@ -63,3 +64,13 @@ button {
     border-radius: 0.375rem;
 }
 </style>
+
+
+<!-- Ниже для primary -->
+<!-- 33DBD9 0% 1AC8E0 46% 1AB1E0 100%  это обычная заливка--> 
+<!-- 2BD2D0 0% 00ADC5 46% 0C9DCB 100%  это при ховере-->
+
+
+<!-- Ниже для secondary -->
+<!-- Полность прозрачная это обычная заливка--> 
+<!-- FFFFFF на 10% opacity это при ховере-->
