@@ -37,17 +37,17 @@
             <FanergyButton>Подарить подписку</FanergyButton>
             <FanergyButton>Подарить подписку</FanergyButton>
 
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
             <FanergyButton size="medium">Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
+            <FanergyButton size="medium">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium">Подарить подписку</FanergyButton>
 
             <FanergyButton size="small">Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
+            <FanergyButton size="small">Подарить подписку</FanergyButton>
+            <FanergyButton size="small">Подарить подписку</FanergyButton>
+            <FanergyButton size="small">Подарить подписку</FanergyButton>
+            <FanergyButton size="small">Подарить подписку</FanergyButton>
         </div>
         <div class="grid grid-cols-5 gap-2">
             <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
@@ -56,17 +56,17 @@
             <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
             <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
 
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
             <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
 
             <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
+            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
         </div>
         <div>
 
