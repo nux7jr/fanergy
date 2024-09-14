@@ -1,12 +1,41 @@
 <template>
     <div class="p-20 flex gap-4 flex-col">
+        <FanergyButtonPrimary>Подарить подписку</FanergyButtonPrimary>
         <div class="grid grid-cols-5 gap-2">
-            <FanergyButtonBar>Подарить подписку</FanergyButtonBar>
-            <FanergyButtonBar>Подарить подписку</FanergyButtonBar>
-            <FanergyButtonBar>Подарить подписку</FanergyButtonBar>
-            <FanergyButtonBar>Подарить подписку</FanergyButtonBar>
-            <FanergyButtonBar>Подарить подписку</FanergyButtonBar>
+            <FanergyButtonPrimary>Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary>Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary>Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary icon="left">Подарить</FanergyButtonPrimary>
+            <FanergyButtonPrimary disabled>Подарить подписку</FanergyButtonPrimary>
 
+            <FanergyButtonPrimary size="medium">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="medium">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="medium">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="medium" icon="right">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="medium" disabled>Подарить подписку</FanergyButtonPrimary>
+
+            <FanergyButtonPrimary size="small">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="small">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="small">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="small" icon="left">Подарить подписку</FanergyButtonPrimary>
+            <FanergyButtonPrimary size="small" disabled>Подарить подписку</FanergyButtonPrimary>
+        </div>
+        <div class="grid grid-cols-5 gap-2 mt-3">
+            <FanergyButtonSecondary>Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary>Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary>Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary icon="left">Подарить</FanergyButtonSecondary>
+            <FanergyButtonSecondary disabled>Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="medium">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="medium">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="medium">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="medium" icon="right">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="medium" disabled>Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="small">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="small">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="small">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="small" icon="left">Подарить подписку</FanergyButtonSecondary>
+            <FanergyButtonSecondary size="small" disabled>Подарить подписку</FanergyButtonSecondary>
         </div>
         <div class="w-40">
             <ColorScheme>
@@ -17,64 +46,44 @@
             <FanergyIcon></FanergyIcon>
         </FanergyWrapper>
         <FanergyInputTextarea label="Test" placeholder="placeholder"></FanergyInputTextarea>
-        <FanergyInputText label="Test" placeholder="placeholder" helper="Helper Text"></FanergyInputText>
+        <FanergyInputText
+        label="Username"
+        type="text"
+        placeholder="Enter your username"
+        helper="This is a required field"
+        validation="valid">
+    </FanergyInputText>
+    <FanergyInputText
+        label="Username"
+        type="text"
+        placeholder="Enter your username"
+        helper="This is a required field"
+        validation="invalid">
+    </FanergyInputText>
+    <FanergyInputText
+        label="Username"
+        type="text"
+        placeholder="Enter your username"
+        helper="This is a required field"
+        validation="default">
+    </FanergyInputText>
+         <!-- или "invalid" или "default" -->
         <!-- <FanergyThemeSwitcher></FanergyThemeSwitcher> -->
         <!-- <FanergyInputCheckbox></FanergyInputCheckbox> -->
-        <UCheckbox v-model="selected" name="test" label="Checkbox Text" />
+        {{ selected }}
+        <!-- <FanergyInputCheckbox v-model="selected" label="Checkbox Text"></FanergyInputCheckbox> -->
+        <!-- <FanergyInputCheckboxRound label="Checkbox Text"></FanergyInputCheckboxRound> -->
+        <FanergyInputToggle></FanergyInputToggle>
         <div class="flex flex-wrap gap-2">
-        <FanergyBadge v-for="item in bar" :type="item">
-            Текст
-        </FanergyBadge>
+            <FanergyBadge v-for="item in bar" :type="item">
+                Текст
+            </FanergyBadge>
         </div>
         <FanergyBadge>
             Текст
         </FanergyBadge>
         <FanergyDropdown></FanergyDropdown>
-        <div class="grid grid-cols-5 gap-2">
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
-            <FanergyButton>Подарить подписку</FanergyButton>
 
-            <FanergyButton size="medium">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium">Подарить подписку</FanergyButton>
-
-            <FanergyButton size="small">Подарить подписку</FanergyButton>
-            <FanergyButton size="small">Подарить подписку</FanergyButton>
-            <FanergyButton size="small">Подарить подписку</FanergyButton>
-            <FanergyButton size="small">Подарить подписку</FanergyButton>
-            <FanergyButton size="small">Подарить подписку</FanergyButton>
-        </div>
-        <div class="grid grid-cols-5 gap-2">
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton variant="secondary">Подарить подписку</FanergyButton>
-
-            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="medium" variant="secondary">Подарить подписку</FanergyButton>
-
-            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-            <FanergyButton size="small" variant="secondary">Подарить подписку</FanergyButton>
-        </div>
-        <div>
-
-            <FanergyButton class="mt-2 max-w-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. loooooooooooooooong</FanergyButton>
-            <FanergyButton class="mt-2 max-w-fit">Looding...</FanergyButton>
-        </div>
-        <!-- <FanergyButton class="mb-2">Подарить подписку</FanergyButton>
-         <FanergyButton variant="secondary">Поддержать автора</FanergyButton> -->
     </div>
 
 </template>
