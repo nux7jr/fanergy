@@ -36,7 +36,7 @@ const inputClass = computed(() => {
     const validationClasses = {
         default: '',
         valid: 'ring-validation focus:ring-validation',
-        invalid: 'ring-error focus:ring-error'
+        invalid: 'ring-invalid focus:ring-invalid'
     };
 
     return `${baseClasses} ${validationClasses[props.validation] || validationClasses.default}`;
@@ -47,7 +47,7 @@ const helperClass = computed(() => {
     const validationClasses = {
         default: 'text-gray-600 dark:text-gray-400',
         valid: 'text-validation',
-        invalid: 'text-error'
+        invalid: 'text-invalid'
     };
 
     return `${baseClasses} ${validationClasses[props.validation] || validationClasses.default}`;

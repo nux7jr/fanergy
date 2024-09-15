@@ -22,18 +22,16 @@ export default <Partial<Config>>{
                 gradient: '#1AB8E0',
 
                 validation: '#439F6E',
-                error: '#F93232',
+                invalid: '#F93232',
                 success: '#439F6E',
 
                 yellow: '#FFDFA0',
+                linear: {
+                    0: '#33DBD9',
+                    40: '#1AC8E0',
+                    100: '#1AB1E0'
+                }
             },
-            // backgroundImage: theme => ({
-            //     'gradient-liner': 
-            //         'linear-gradient(to right, #33DBD9 0%, #1AC8E0 46%, #1AB1E0 100%)',
-            //   }),
-            // backgroundGradient: () => ({
-            //     'gradient-primary: linear-gradient(to right, #33DBD9 0%, #1AC8E0 46%, #1AB1E0 100%)'
-            //   }),
             aspectRatio: {
                 auto: 'auto',
                 square: '1 / 1',

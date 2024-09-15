@@ -1,4 +1,6 @@
 <template>
+    <FanergyWrapper class="flex gap-4 mt-4">
+
     <div class="p-20 flex gap-4 flex-col">
         <FanergyButtonPrimary>Подарить подписку</FanergyButtonPrimary>
         <div class="grid grid-cols-5 gap-2">
@@ -71,8 +73,8 @@
         <!-- <FanergyThemeSwitcher></FanergyThemeSwitcher> -->
         <!-- <FanergyInputCheckbox></FanergyInputCheckbox> -->
         {{ selected }}
-        <!-- <FanergyInputCheckbox v-model="selected" label="Checkbox Text"></FanergyInputCheckbox> -->
-        <!-- <FanergyInputCheckboxRound label="Checkbox Text"></FanergyInputCheckboxRound> -->
+        <FanergyInputCheckbox v-model="selected" label="Checkbox Text"></FanergyInputCheckbox>
+        <FanergyInputCheckboxRound label="Checkbox Text"></FanergyInputCheckboxRound>
         <FanergyInputToggle></FanergyInputToggle>
         <div class="flex flex-wrap gap-2">
             <FanergyBadge v-for="item in bar" :type="item">
@@ -82,9 +84,12 @@
         <FanergyBadge>
             Текст
         </FanergyBadge>
-        <FanergyDropdown></FanergyDropdown>
 
+        <FanergyDropdown :values="bar"></FanergyDropdown>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nesciunt sed aspernatur eos delectus. Corrupti dolor recusandae aliquid, non inventore sit ab aspernatur illum soluta autem obcaecati dicta et beatae.</p>
+        
     </div>
+</FanergyWrapper>
 
 </template>
 
